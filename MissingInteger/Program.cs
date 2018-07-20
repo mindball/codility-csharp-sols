@@ -10,21 +10,17 @@ namespace MissingInteger
     {
         static void Main(string[] args)
         {
-            int sol = Solution(new int[] {1});
-            
+            int sol = Solution(new int[] {9999999});            
         }
 
         public static int Solution(int[] A)
         {
             int missInt = 1;
-            Array.Sort(A); 
-
-
-           
+            Array.Sort(A);          
 
             for (int i = 0; i < A.Length; i++)
             {                
-                if(A[i] > 0 && A[i] < 100001)
+                if(A[i] > 0)
                 {
                     if (missInt == A[i])
                         missInt++;
