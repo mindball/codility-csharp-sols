@@ -47,20 +47,14 @@ namespace BinaryGap
                                 
                     number = tempNumber;
                     currentCountConZeros = 0;
-
-                }                
-                
+                }   
                 else
                 {
                     number /= 2;
                 }
-                
-                
-
             }
 
             return maxCountConZers;
-
         }
 
         
